@@ -22,8 +22,8 @@ class ViewController: UIViewController {
 
 
         UIDevice.current.isBatteryMonitoringEnabled = true
-        nc.addObserver(forName: .UIDeviceBatteryStateDidChange, object: nil, queue: nil, using: batteryStateDidChange)
-        nc.addObserver(forName: .UIDeviceBatteryLevelDidChange, object: nil, queue: nil, using: batteryLevelDidChange)
+        nc.addObserver(forName: UIDevice.batteryStateDidChangeNotification, object: nil, queue: nil, using: batteryStateDidChange)
+        nc.addObserver(forName: UIDevice.batteryLevelDidChangeNotification, object: nil, queue: nil, using: batteryLevelDidChange)
 
         let gesture = UITapGestureRecognizer(target: self, action: #selector(self.checkAction(sender:)))
         self.view.addGestureRecognizer(gesture)
@@ -75,7 +75,6 @@ class ViewController: UIViewController {
 
     private func GetBatteryLevel() -> String {
         var returnString: String
-        var colorIndicator: String
 
         switch UIDevice.current.batteryState {
         case .charging:
@@ -102,7 +101,7 @@ class ViewController: UIViewController {
         CurrentTime.text = dateString
     }
 
-    override func prefersHomeIndicatorAutoHidden() -> Bool {
+    override var prefersHomeIndicatorAutoHidden: Bool {
         return true
     }
 
