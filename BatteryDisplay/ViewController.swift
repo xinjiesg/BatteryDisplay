@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var BatteryPercentage: UILabel!
-
+    @IBOutlet weak var CurrentTime: UILabel!
+    
     override func viewDidLoad() {
         let nc = NotificationCenter.default;
 
         super.viewDidLoad()
+        
+        UIApplication.shared.isIdleTimerDisabled = true
+        DisplayCurrentTime()
+
 
         UIDevice.current.isBatteryMonitoringEnabled = true
         nc.addObserver(forName: .UIDeviceBatteryStateDidChange, object: nil, queue: nil, using: batteryStateDidChange)
@@ -70,6 +75,7 @@ class ViewController: UIViewController {
 
     private func GetBatteryLevel() -> String {
         var returnString: String
+        var colorIndicator: String
 
         switch UIDevice.current.batteryState {
         case .charging:
@@ -81,8 +87,19 @@ class ViewController: UIViewController {
         case .unknown:
             returnString = "Unknown: "
         }
+        
+        
 
         return returnString + String(format: "%.0f%%", UIDevice.current.batteryLevel * 100)
+    }
+    
+    
+    private func DisplayCurrentTime() {
+        let dateFormatter : DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm"
+        let date = Date()
+        let dateString = dateFormatter.string(from: date)
+        CurrentTime.text = dateString
     }
 
     override func prefersHomeIndicatorAutoHidden() -> Bool {

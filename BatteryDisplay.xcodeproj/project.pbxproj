@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EBBC327FBCADACDE5C4B76A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBC34AEA1E2320159E243C2 /* Main.storyboard */; };
-		EBBC32D8E0D69B63EE331300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBC3A2569C853CFD1D50C45 /* LaunchScreen.storyboard */; };
 		EBBC3387AE4F319101C0C523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBC3A0579AFA4C8A6B57A8F /* Assets.xcassets */; };
 		EBBC3597F62E147CD186D859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC3748DF84062628B0662E /* ViewController.swift */; };
 		EBBC371AB000422B16060848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC3EF0A529C0702FD51E02 /* AppDelegate.swift */; };
@@ -40,7 +39,6 @@
 		EBBC3556117CB92477A13D84 /* BatteryDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatteryDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBC369A6FCE25BD4F60C770 /* BatteryDisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatteryDisplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBC3748DF84062628B0662E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBBC385F5A0FB0EE885E806E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBBC389EDC29024656C592D2 /* BatteryDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBC38D1845124DC6D39FA4E /* BatteryDisplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryDisplayTests.swift; sourceTree = "<group>"; };
 		EBBC3A0579AFA4C8A6B57A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			children = (
 				EBBC34E071009C11B7ED2C7B /* Info.plist */,
 				EBBC3A0579AFA4C8A6B57A8F /* Assets.xcassets */,
-				EBBC3A2569C853CFD1D50C45 /* LaunchScreen.storyboard */,
 				EBBC3EF0A529C0702FD51E02 /* AppDelegate.swift */,
 				EBBC34AEA1E2320159E243C2 /* Main.storyboard */,
 				EBBC3748DF84062628B0662E /* ViewController.swift */,
@@ -196,7 +193,7 @@
 						DevelopmentTeam = 7WRNESNE6D;
 					};
 					EBBC3EFDDAD7CF964A52D5C8 = {
-						DevelopmentTeam = 7WRNESNE6D;
+						DevelopmentTeam = 242FH9QH26;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -233,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBBC3387AE4F319101C0C523 /* Assets.xcassets in Resources */,
-				EBBC32D8E0D69B63EE331300 /* LaunchScreen.storyboard in Resources */,
 				EBBC327FBCADACDE5C4B76A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +293,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EBBC3A2569C853CFD1D50C45 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBBC385F5A0FB0EE885E806E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -314,10 +302,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7WRNESNE6D;
+				DEVELOPMENT_TEAM = 242FH9QH26;
 				INFOPLIST_FILE = BatteryDisplay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.marklyen.BatteryDisplay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinjie.BatteryDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -482,10 +470,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7WRNESNE6D;
+				DEVELOPMENT_TEAM = 242FH9QH26;
 				INFOPLIST_FILE = BatteryDisplay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.marklyen.BatteryDisplay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinjie.BatteryDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
